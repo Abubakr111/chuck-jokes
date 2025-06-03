@@ -12,6 +12,8 @@ generateJoke = () => {
         const data = JSON.parse(this.responseText);
 
         joke.innerHTML = data.value;
+        } else {
+            joke.innerHTML = 'something went wrong...'; 
         }
     }
 
